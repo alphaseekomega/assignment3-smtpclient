@@ -3,7 +3,7 @@ from socket import *
 
 def smtp_client(port=1025, mailserver='127.0.0.1'):
     msg = "\r\n My message"
-    endmsg = "\r\n.\r\n"
+    endmsg = "QUIT\r\n.\r\n"
 
     # Choose a mail server (e.g. Google mail server) if you want to verify the script beyond GradeScope
 
@@ -23,7 +23,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     heloCommand = 'HELO Alice\r\n'
     clientSocket.send(heloCommand.encode())
     recv1 = clientSocket.recv(1024).decode()
-    print(recv1)
+    #print(recv1)
     #if recv1[:3] != '250':
     #    print('250 reply not received from server.')
 
@@ -50,7 +50,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send QUIT command and handle server response.
     # Fill in start
-
+    endmsg
     # Fill in end
 
 

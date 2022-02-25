@@ -50,7 +50,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send QUIT command and handle server response.
     # Fill in start
-    quit ()
+    quit = 'QUIT'+endmsg
     # Fill in end
 
 

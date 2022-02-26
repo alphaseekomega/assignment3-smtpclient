@@ -50,6 +50,8 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send message data.
     # Fill in start
+    message = 'From: Client <test123@test.com> To: Server <test@server> Subject: Hello ' \
+              'Hello World! I am a client!\r\n.'
 
     # Fill in end
 
